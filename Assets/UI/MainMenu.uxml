@@ -1,10 +1,10 @@
 <engine:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:engine="UnityEngine.UIElements" xmlns:editor="UnityEditor.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/UI/MenuStyleSheet.uss?fileID=7433441132597879392&amp;guid=00aa886d068134944b996cd9828d154a&amp;type=3#MenuStyleSheet" />
-    <engine:VisualElement style="flex-grow: 1;">
+    <engine:VisualElement name="VisualElement" focusable="false" style="flex-grow: 1;">
         <engine:Label text="Title" name="Title" double-click-selects-word="false" triple-click-selects-line="false" display-tooltip-when-elided="false" emoji-fallback-support="false" enabled="true" class="title" />
-        <engine:Button text="Start" name="Start" class="textbutton" style="align-items: auto; align-content: auto; justify-content: center; position: absolute; left: 0; top: 50%;" />
-        <engine:Button text="Options" name="Options" class="textbutton" style="top: 60%; left: 0;" />
-        <engine:Button text="Exit" name="Exit" class="textbutton" style="top: 70%; left: 0;" />
+        <engine:Button text="Start" name="Start" selectable="false" double-click-selects-word="false" triple-click-selects-line="false" display-tooltip-when-elided="false" emoji-fallback-support="false" class="textbutton" style="align-items: auto; align-content: auto; justify-content: center; position: absolute; left: 0; top: 50%;" />
+        <engine:Button text="Options" name="Options" selectable="false" double-click-selects-word="false" triple-click-selects-line="false" display-tooltip-when-elided="false" enable-rich-text="true" emoji-fallback-support="false" focusable="true" class="textbutton" style="top: 60%; left: 0;" />
+        <engine:Button text="Exit" name="Exit" selectable="false" emoji-fallback-support="false" double-click-selects-word="false" triple-click-selects-line="false" display-tooltip-when-elided="false" focusable="true" class="textbutton" style="top: 70%; left: 0;" />
         <engine:Label text="v0.1" name="VersionNumber" double-click-selects-word="false" triple-click-selects-line="false" display-tooltip-when-elided="false" class="subtext" style="align-items: flex-end; bottom: 0; right: 0; top: 94%; left: 0; -unity-text-align: lower-right; align-content: flex-end; justify-content: flex-end; align-self: flex-end;" />
     </engine:VisualElement>
 </engine:UXML>

@@ -1,22 +1,16 @@
+using TMPro;
 using UnityEngine;
 using UnityEngine.InputSystem;
 
-public class InputManager : MonoBehaviour, PlatformerInput.IUIActions
+public class InputManager : MonoBehaviour
 {
-    void PlatformerInput.IUIActions.OnNewaction(InputAction.CallbackContext context)
-    {
-        throw new System.NotImplementedException();
-    }
+    private PlatformerInput _input; 
+
+    public PlatformerInput.UIActions UIActions { get; private set; }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
-        
-    }
 
-    // Update is called once per frame
-    void Update()
-    {
-        
     }
 }
